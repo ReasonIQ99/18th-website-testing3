@@ -1,0 +1,2 @@
+const $=s=>document.querySelector(s);const cfg=window.SITE_CONFIG||{};const db=cfg.supabaseUrl&&cfg.supabaseAnonKey&&window.supabase?supabase.createClient(cfg.supabaseUrl,cfg.supabaseAnonKey):null;
+function node(t,text,cls){const n=document.createElement(t);if(text)n.textContent=text;if(cls)n.className=cls;return n}function http(s){try{const u=new URL(s);return ['https:','http:'].includes(u.protocol)?u.href:null}catch{return null}}function link(text,url){const a=node('a',text,'button');a.href=url;return a}
